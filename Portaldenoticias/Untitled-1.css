@@ -1,0 +1,139 @@
+/* Reset básico para remover margens e preenchimentos padrão */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização do cabeçalho */
+body > header{
+    background-color: #0f7516;
+    padding: 16px 0;
+    color: #ffffff;
+}
+
+/* Container principal do cabeçalho */
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Ajuste para garantir que o texto fique acima do quadrado */
+header h1 {
+    position: relative;
+    z-index: 1; /* Mantém o texto sobre o quadrado */
+}
+
+
+
+/* Estilização da lista de navegação */
+header li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+/* Links do menu */
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+/* Definição do layout principal */
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+/* Estilização dos artigos */
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+/* Espaçamento entre seções e elementos */
+section{
+    padding: 16px 0;
+}
+
+section h2, 
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+/* Botões dentro dos artigos */
+.articles article a{ 
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover{
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Títulos das seções */
+section h2{
+    font-size: 32px;
+}
+
+/* Estilização específica para cada categoria */
+#jogos {
+    background-color: #7a8effe6 ;
+}
+
+#jogos .articles article a{
+    background-color: #FF0000;
+}
+
+#technology {
+    background-color: #ADD8E6 ;
+}
+
+#technology .articles article a{
+    background-color: #9b00eeee;
+}
+
+#sports {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+#sports .articles article a{
+    background-color: #009432;
+}
+
+#economy{
+    background-color: #5af60087;
+}
+
+#economy .articles article a{
+    background-color: #ff9f1a;
+}
+
+
