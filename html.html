@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulário</title>
+
+    <!-- ===== Link para o CSS externo ===== -->
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+    <!-- ===== Título Principal ===== -->
+    <h1>Comparação de Números</h1>
+
+    <!-- ===== Formulário de Comparação ===== -->
+     <div class="Campos">
+    <form id="formulario">
+        <!-- Campo A -->
+        <label for="campoA">Campo A:</label>
+        <input type="number" id="campoA" name="campoA" required><br><br>
+
+        <!-- Campo B -->
+        <label for="campoB">Campo B:</label>
+        <input type="number" id="campoB" name="campoB" required><br><br>
+
+        <!-- Botão de Envio -->
+        <button type="submit" id="submit">Enviar</button>
+    </form>
+</div>
+
+    <!-- ===== Mensagem de Validação ===== -->
+    <div id="mensagem" class="mensagem"></div>
+
+    <!-- ===== Link para o JavaScript externo ===== -->
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* ===== Estilização Global ===== */
+* {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Corpo da Página ===== */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== Título Principal ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===== Estilização do Formulário ===== */
+form {
+    margin-bottom: 20px;
+}
+
+/* ===== Estilização dos Campos de Entrada ===== */
+input[type="number"] {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+/* ===== Estilização do Botão de Envio ===== */
+button {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 20%;
+}
+
+/* ===== Mensagem de Validação ===== */
+.mensagem {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+    display: none;
+}
+
+/* ===== Mensagem Positiva ===== */
+.positivo {
+    color: green;
+}
+
+/* ===== Mensagem Negativa ===== */
+.negativo {
+    color: red;
+}
+
+/* ===== Estilo para Campos com Erro ===== */
+.error {
+    border: 2px solid red;
+}
