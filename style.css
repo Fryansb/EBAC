@@ -1,0 +1,207 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f1f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Header */
+header {
+  background-color: rgb(64, 97, 204);
+  color: #fff;
+  padding: 16px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sobre a Loja */
+#sobre-a-loja .container {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 36px 0;
+}
+
+#sobre-a-loja img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+#sobre-a-loja h2 {
+  color: rgb(64, 97, 204);
+  font-style: italic;
+  padding-bottom: 12px;
+  border-bottom: 4px solid rgb(64, 97, 204);
+  margin-bottom: 32px;
+}
+
+#sobre-a-loja p {
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+/* Produtos */
+#produtos {
+  padding-bottom: 56px;
+}
+
+#produtos .container h2 {
+  color: rgb(64, 97, 204);
+  font-style: italic;
+  padding-bottom: 12px;
+  border-bottom: 4px solid rgb(64, 97, 204);
+  margin-bottom: 32px;
+}
+
+.mercadoria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.produto {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 0 8px rgb(64 97 204 / 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  max-width: 230px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.produto h3 {
+  margin: 16px 0 8px;
+  font-size: 1.1rem;
+}
+
+.produto p {
+  flex-grow: 1;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.produto button {
+  margin-top: 16px;
+  background-color: rgb(64, 97, 204);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.produto button:hover {
+  background-color: rgb(50, 75, 170);
+}
+
+/* Responsividade */
+
+/* Tablet (641px a 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 641px) {
+  #sobre-a-loja .container {
+    flex-direction: row;
+  }
+  
+  .mercadoria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .produto img {
+    max-width: 330px;
+  }
+  
+  .produto button {
+    width: 200px;
+  }
+}
+
+/* Mobile (até 640px) */
+@media screen and (max-width: 640px) {
+  #sobre-a-loja .container {
+    flex-direction: column;
+    padding: 24px 0;
+  }
+  
+  #sobre-a-loja img {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  
+  #produtos .container {
+    padding: 0 8px;
+  }
+  
+  .mercadoria {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .produto img {
+    max-width: 100%;
+  }
+  
+  .produto button {
+    width: 100%;
+  }
+  
+  header .container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
