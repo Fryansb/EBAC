@@ -1,0 +1,14 @@
+{
+  "name": "projeto-loja-ebac",
+  "version": "1.0.0",
+  "description": "Projeto de loja do curso da EBAC",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch sass/styles.scss:dist/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.4"
+  }
+}
