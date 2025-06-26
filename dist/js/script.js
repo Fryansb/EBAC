@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){console.log("O JavaScript e o DOM foram carregados com sucesso!");let c=document.querySelectorAll(".gallery-image");c.forEach(function(e){e.addEventListener("click",function(){c.forEach(e=>e.classList.remove("clicked")),this.classList.add("clicked"),console.log("Imagem clicada:",this.alt)})})});
