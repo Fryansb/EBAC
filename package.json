@@ -1,0 +1,21 @@
+{
+  "name": "exercicio-less-ebac",
+  "version": "1.0.0",
+  "description": "Exercício do curso da EBAC para converter um projeto CSS para LESS.",
+  "main": "index.js",
+  "scripts": {
+    "less": "lessc src/less/styles.less build/css/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "less",
+    "css",
+    "frontend",
+    "ebac"
+  ],
+  "author": "Seu Nome Aqui",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.2.0"
+  }
+}
